@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../Mineria de Datos"
+		},
+		{
+			"path": "../../../../Inteligencia Territorial"
+		},
+		{
+			"path": "../../../../MongoDB"
+		},
+		{
+			"path": "../../../../uvai"
+		}
+	],
+	"settings": {
+		"wolf.disableHotModeWarning": true
+	}
+}

@@ -1,0 +1,53 @@
+{
+    "proceso_admision": {
+      "examen": "Aplicación del examen EXANI-II de CENEVAL o Examen General Virtual de Conocimientos (90% del puntaje final).",
+      "promedio": "Validación del promedio de bachillerato, el cual equivale al 10% del puntaje final.",
+      "requisitos": [
+        "Haber concluido el bachillerato o estar cursando el último periodo del mismo.",
+        "Tener un promedio mínimo de 6 o 60.",
+        "Contar con certificado de bachillerato o documentos válidos."
+      ],
+      "registro": {
+        "plazo": "Del 17 de octubre al 7 de noviembre de 2024.",
+        "pagina": "https://admision.uan.mx/",
+        "documentos_necesarios": [
+          "CURP",
+          "Datos personales y de la escuela de procedencia.",
+          "Fotografía tomada durante el registro.",
+          "Constancia de promedio general en formato PDF.",
+          "Correo electrónico personal y alterno.",
+          "Número telefónico personal y alterno."
+        ]
+      },
+      "pago": {
+        "monto": "$642.00",
+        "plazo": "Del 17 de octubre al 5 de noviembre de 2024.",
+        "opciones": [
+          "Instituciones bancarias indicadas en la Orden de pago.",
+          "Pago en línea a través de la página de admisión."
+        ]
+      },
+      "examen_presencial": {
+        "fecha": "3 de diciembre de 2024.",
+        "requisitos": [
+          "Pase de examen impreso o digital.",
+          "Identificación oficial vigente.",
+          "Lápiz, borrador, sacapuntas y calculadora no científica."
+        ]
+      },
+      "examen_virtual": {
+        "fecha": "3 de diciembre de 2024.",
+        "requisitos": [
+          "Computadora portátil o de escritorio.",
+          "Conexión a internet mínima de 5 MB/s.",
+          "Versión actualizada de navegadores web (Chrome, Firefox, etc.)."
+        ]
+      }
+    },
+    "contacto": {
+      "telefono": "311 211 8800, Ext. 6613",
+      "correo": "admision@uan.edu.mx",
+      "direccion": "Edificio PiiDA, Campus Ciudad de la Cultura “Amado Nervo”, Tepic, Nayarit."
+    }
+  }
+  
