@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Unidad I interactiva: fundamentos de IA, sistemas, agentes y PEAS.">
+  <title>Unidad I · Sistemas Inteligentes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="hero">
+    <div class="hero-inner">
+      <a class="back" href="../">← Volver al curso</a>
+      <p class="eyebrow">Sistemas Inteligentes · Unidad I</p>
+      <h1>¿Qué hace inteligente a un sistema?</h1>
+      <p class="lead">Explora, clasifica, relaciona y diseña un agente con PEAS. Tu progreso se guarda en este dispositivo.</p>
+      <div class="progress-wrap" aria-label="Progreso de la unidad">
+        <div class="progress"><span id="progressBar"></span></div><strong id="progressText">0 %</strong>
+      </div>
+    </div>
+  </header>
+  <nav class="nav" aria-label="Secciones de la unidad">
+    <button data-target="inicio" class="active">Inicio</button>
+    <button data-target="historia">Historia</button>
+    <button data-target="micro">Microlección</button>
+    <button data-target="clasificador">Clasificador</button>
+    <button data-target="entornos">Entornos</button>
+    <button data-target="tipos">Tipos de agente</button>
+    <button data-target="memorama">Memorama</button>
+    <button data-target="peas">Constructor PEAS</button>
+    <button data-target="quiz">Autoevaluación</button>
+  </nav>
+
+  <main id="contenido" class="shell">
+    <section id="inicio" class="panel active" tabindex="-1">
+      <div class="section-head"><span>01</span><div><p>Ruta de aprendizaje</p><h2>Tu misión</h2></div></div>
+      <div class="mission">
+        <div><h3>Reto final</h3><p>Diseñar un agente útil, explicable y delimitado mediante PEAS. No necesitas programar.</p></div>
+        <div><h3>Tiempo estimado</h3><p>90 minutos, distribuidos durante cuatro sesiones.</p></div>
+      </div>
+      <h3>Al terminar podrás</h3>
+      <ul class="checks"><li>Distinguir automatización, modelo, sistema inteligente y producto con IA.</li><li>Explicar el ciclo percepción–razonamiento–acción.</li><li>Reconocer sensores, actuadores, entorno, objetivo y desempeño.</li><li>Construir y revisar una especificación PEAS coherente.</li></ul>
+      <div class="case"><p class="tag">Pregunta inicial</p><h3>Un semáforo cambia su tiempo según el flujo vehicular detectado. ¿Es automatización o sistema inteligente?</h3><p>No respondas por apariencia. Identifica qué percibe, cómo decide, qué acción produce y cómo se evalúa.</p></div>
+      <button class="primary next" data-next="historia">Explorar la historia →</button>
+    </section>
+
+    <section id="historia" class="panel" tabindex="-1">
+      <div class="section-head"><span>02</span><div><p>Línea del tiempo</p><h2>La IA no nació con los chatbots</h2></div></div>
+      <p>Explora los hitos. La historia permite reconocer que la IA combina tradiciones simbólicas, búsqueda, aprendizaje y modelos generativos; ninguna etapa reemplazó por completo a las anteriores.</p>
+      <div class="timeline-layout">
+        <div id="timelineList" class="timeline-list" role="list" aria-label="Hitos de la inteligencia artificial"></div>
+        <article id="timelineDetail" class="timeline-detail" aria-live="polite"></article>
+      </div>
+      <p class="note">Actividad docente sugerida: después del cuarto hito, pide al grupo identificar qué ideas reaparecen en los sistemas actuales.</p>
+      <button class="primary next" data-next="micro">Continuar a la microlección →</button>
+    </section>
+
+    <section id="micro" class="panel" tabindex="-1">
+      <div class="section-head"><span>03</span><div><p>Presentación dinámica</p><h2>Microlección</h2></div></div>
+      <div class="slides" aria-live="polite">
+        <button id="prevSlide" aria-label="Diapositiva anterior">←</button>
+        <article id="slideCard"></article>
+        <button id="nextSlide" aria-label="Diapositiva siguiente">→</button>
+      </div>
+      <div class="dots" id="slideDots" aria-label="Progreso de diapositivas"></div>
+      <div class="quick" id="quickCheck"></div>
+    </section>
+
+    <section id="clasificador" class="panel" tabindex="-1">
+      <div class="section-head"><span>04</span><div><p>Reto de casos</p><h2>Clasifica con evidencia</h2></div></div>
+      <p>Lee el caso y elige la categoría que mejor describe el componente dominante. Después recibirás retroalimentación.</p>
+      <div class="scoreline"><span id="caseCount">Caso 1 de 8</span><strong id="caseScore">0 puntos</strong></div>
+      <article class="challenge"><p class="tag" id="caseContext"></p><h3 id="caseText"></h3><div id="caseOptions" class="options"></div><div id="caseFeedback" class="feedback" aria-live="polite"></div><button id="nextCase" class="primary" disabled>Siguiente caso →</button></article>
+    </section>
+
+    <section id="entornos" class="panel" tabindex="-1">
+      <div class="section-head"><span>05</span><div><p>Reto de contexto</p><h2>El entorno cambia el diseño</h2></div></div>
+      <p>Analiza una dimensión por caso. Después de responder, relaciona la propiedad del entorno con una necesidad de diseño.</p>
+      <div class="scoreline"><span id="envCount">Caso 1</span><strong id="envScore">0 puntos</strong></div>
+      <article class="challenge"><p class="tag" id="envDimension"></p><h3 id="envText"></h3><div id="envOptions" class="options"></div><div id="envFeedback" class="feedback" aria-live="polite"></div><button id="nextEnv" class="primary" disabled>Siguiente entorno →</button></article>
+    </section>
+
+    <section id="tipos" class="panel" tabindex="-1">
+      <div class="section-head"><span>06</span><div><p>Arquitecturas de agente</p><h2>Reactivo, deliberativo o híbrido</h2></div></div>
+      <p>Clasifica el mecanismo dominante. La categoría depende de cómo decide, no de su apariencia ni de que tenga una interfaz conversacional.</p>
+      <div class="scoreline"><span id="agentCount">Caso 1</span><strong id="agentScore">0 puntos</strong></div>
+      <article class="challenge"><p class="tag" id="agentContext"></p><h3 id="agentText"></h3><div id="agentOptions" class="options"></div><div id="agentFeedback" class="feedback" aria-live="polite"></div><button id="nextAgent" class="primary" disabled>Siguiente agente →</button></article>
+    </section>
+
+    <section id="memorama" class="panel" tabindex="-1">
+      <div class="section-head"><span>07</span><div><p>Juego de relaciones</p><h2>Memorama del agente</h2></div></div>
+      <p>Encuentra las parejas concepto–función. Puedes usar teclado: Tab para recorrer y Enter para voltear.</p>
+      <div class="scoreline"><span id="moves">0 movimientos</span><strong id="pairs">0 de 8 parejas</strong></div>
+      <div id="memoryGrid" class="memory-grid"></div>
+      <button id="resetMemory" class="secondary">Reiniciar memorama</button>
+    </section>
+
+    <section id="peas" class="panel" tabindex="-1">
+      <div class="section-head"><span>08</span><div><p>Laboratorio low/no-code</p><h2>Constructor PEAS</h2></div></div>
+      <div class="peas-layout">
+        <form id="peasForm">
+          <label>Nombre del agente<input name="name" placeholder="Ej. OrientaUAN" required></label>
+          <label>Usuario y necesidad<textarea name="user" placeholder="¿Quién lo usará y para qué?" required></textarea></label>
+          <label>Decisión o tarea que apoya<textarea name="task" placeholder="Delimita una sola decisión o tarea" required></textarea></label>
+          <fieldset><legend>P · Medidas de desempeño</legend><textarea name="performance" placeholder="Utilidad, calidad, seguridad, tiempo, errores…" required></textarea><small>¿Cómo sabremos si funciona y si evita daño?</small></fieldset>
+          <fieldset><legend>E · Entorno</legend><textarea name="environment" placeholder="Personas, sistemas, reglas y condiciones…" required></textarea><small>¿Dónde opera y qué puede cambiar?</small></fieldset>
+          <fieldset><legend>A · Actuadores</legend><textarea name="actuators" placeholder="Mensajes, alertas, recomendaciones, movimientos…" required></textarea><small>¿Cómo interviene o comunica?</small></fieldset>
+          <fieldset><legend>S · Sensores</legend><textarea name="sensors" placeholder="Texto, formularios, cámara, API, estado…" required></textarea><small>¿Qué información concreta recibe?</small></fieldset>
+          <label>Fuera de alcance<textarea name="limits" placeholder="Qué no debe hacer" required></textarea></label>
+          <label>Abstención y supervisión humana<textarea name="human" placeholder="Cuándo se abstiene y quién interviene" required></textarea></label>
+          <div class="actions"><button type="button" id="reviewPeas" class="primary">Revisar coherencia</button><button type="button" id="downloadPeas" class="secondary">Descargar ficha</button><button type="reset" class="ghost">Limpiar</button></div>
+        </form>
+        <aside class="coach"><p class="tag">Revisor PEAS</p><h3 id="peasStatus">Completa la ficha para recibir orientación.</h3><ul id="peasChecks"></ul><p class="note">La revisión detecta vacíos básicos; la pertinencia del diseño debe justificarse con análisis humano.</p></aside>
+      </div>
+    </section>
+
+    <section id="quiz" class="panel" tabindex="-1">
+      <div class="section-head"><span>09</span><div><p>Comprobación individual</p><h2>Autoevaluación</h2></div></div>
+      <p>Responde diez preguntas. Al finalizar verás retroalimentación por concepto y podrás intentarlo nuevamente.</p>
+      <form id="quizForm"><div id="quizQuestions"></div><button class="primary" type="submit">Calificar autoevaluación</button></form>
+      <div id="quizResult" class="result" aria-live="polite"></div>
+      <div class="completion"><h3>Cierre de la unidad</h3><p>Tu evidencia formal se entrega en Classroom: análisis del caso, ficha PEAS, diagrama, límites y audio individual.</p><button id="printProgress" class="secondary">Imprimir resumen de progreso</button><button id="resetAll" class="ghost">Reiniciar todo</button></div>
+    </section>
+  </main>
+  <footer><p>Unidad I · Sistemas Inteligentes · Recurso educativo accesible y sin recopilación de datos.</p><p class="sources">Fuentes base: <a href="https://academic.oup.com/mind/article/LIX/236/433/986238">Turing (1950)</a> · <a href="https://jmc.stanford.edu/articles/dartmouth/dartmouth.pdf">Dartmouth (1955)</a> · <a href="https://research.ibm.com/publications/deep-blue">IBM Deep Blue</a> · <a href="https://deepmind.google/research/alphago/">AlphaGo</a> · <a href="https://arxiv.org/abs/1706.03762">Transformer</a> · <a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI RMF</a>.</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
